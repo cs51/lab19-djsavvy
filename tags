@@ -1,0 +1,74 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/c06ea57f/
+ATM	Makefile	/^ATM: aTMcomponents.ml .\/aTMcomponents.mli $/;"	t
+ATM	lab19.ml	/^module ATM = ATMcomponents ;;$/;"	M
+ATMFinished	lab19.ml	/^exception ATMFinished ;;$/;"	e
+ATMNext	lab19.ml	/^exception ATMNext ;;$/;"	e
+ATMcomponents	aTMcomponents.ml	/^(* Customer account identifiers *)$/;"	M
+ATMcomponents	aTMcomponents.mli	/^(*$/;"	M
+Absbook	absbook.ml	/^(*$/;"	M
+Balance	aTMcomponents.ml	/^  | Balance           (* balance inquiry *)$/;"	C	type:action
+Balance	aTMcomponents.mli	/^  | Balance           (* balance inquiry *)$/;"	C	type:action
+Deposit	aTMcomponents.ml	/^  | Deposit of int    (* deposit an amount *)$/;"	C	type:action
+Deposit	aTMcomponents.mli	/^  | Deposit of int    (* deposit an amount *)$/;"	C	type:action
+Finished	aTMcomponents.ml	/^  | Finished          (* shut down the ATM and exit entirely *)$/;"	C	type:action
+Finished	aTMcomponents.mli	/^  | Finished          (* shut down the ATM and exit entirely *)$/;"	C	type:action
+Lab19	lab19.ml	/^(* $/;"	M
+Next	aTMcomponents.ml	/^  | Next              (* finish this customer and move on to the next one *)$/;"	C	type:action
+Next	aTMcomponents.mli	/^  | Next              (* finish this customer and move on to the next one *)$/;"	C	type:action
+Withdraw	aTMcomponents.ml	/^  | Withdraw of int   (* withdraw an amount *)$/;"	C	type:action
+Withdraw	aTMcomponents.mli	/^  | Withdraw of int   (* withdraw an amount *)$/;"	C	type:action
+_	lab19.ml	/^let _ = atm init ;;$/;"	f
+account_spec	aTMcomponents.ml	/^type account_spec = {name : string; id : id; balance : int} ;;$/;"	t
+account_spec	aTMcomponents.mli	/^type account_spec = {name : string; id : id; balance : int} ;;$/;"	t
+acquire_act	aTMcomponents.ml	/^let rec acquire_act : unit -> action = fun () ->$/;"	v
+acquire_act	aTMcomponents.mli	/^val acquire_act : unit -> action ;;$/;"	p	type:account_spec
+acquire_amount	aTMcomponents.ml	/^let acquire_amount : unit -> int = fun () ->$/;"	v
+acquire_amount	aTMcomponents.mli	/^val acquire_amount : unit -> int ;;$/;"	p	type:account_spec
+acquire_id	aTMcomponents.ml	/^let acquire_id : unit -> id = fun () ->$/;"	v
+acquire_id	aTMcomponents.mli	/^val acquire_id : unit -> id ;;$/;"	p	type:account_spec
+action	aTMcomponents.ml	/^type action =$/;"	t
+action	aTMcomponents.mli	/^type action =$/;"	t
+all	Makefile	/^all: ATM lab19$/;"	t
+atm	lab19.ml	/^let atm (initial : ATM.account_spec list) : unit =$/;"	f
+balance	aTMcomponents.ml	/^type account_spec = {name : string; id : id; balance : int} ;;$/;"	r	type:account_spec
+balance	aTMcomponents.mli	/^type account_spec = {name : string; id : id; balance : int} ;;$/;"	r	type:account_spec
+call_reporting_time	absbook.ml	/^let call_reporting_time ?(count : int = 1) (f : 'a -> 'b) (x : 'a) : 'b =$/;"	v
+call_timed	absbook.ml	/^let call_timed ?(count = 1) (f : 'a -> 'b) (x : 'a) : 'b * float =$/;"	v
+clean	Makefile	/^clean: $/;"	t
+const	absbook.ml	/^let const x _ = x$/;"	f
+database	aTMcomponents.ml	/^let database : account_spec list ref = ref [];;$/;"	v
+deliver_cash	aTMcomponents.ml	/^let deliver_cash (amt : int) : unit = $/;"	f
+deliver_cash	aTMcomponents.mli	/^val deliver_cash : int -> unit ;;$/;"	p	type:account_spec
+get_balance	aTMcomponents.mli	/^val get_balance : id -> int ;;$/;"	p	type:account_spec
+get_name	aTMcomponents.ml	/^let get_name (id : int) : string = $/;"	f
+get_name	aTMcomponents.mli	/^val get_name : id -> string ;;$/;"	p	type:account_spec
+id	aTMcomponents.ml	/^type account_spec = {name : string; id : id; balance : int} ;;$/;"	r	type:account_spec
+id	aTMcomponents.ml	/^type id = int$/;"	t
+id	aTMcomponents.mli	/^type account_spec = {name : string; id : id; balance : int} ;;$/;"	r	type:account_spec
+id	aTMcomponents.mli	/^type id = int$/;"	t
+id	absbook.ml	/^let id x = x ;;$/;"	f
+init	lab19.ml	/^let init : ATM.account_spec list =$/;"	v
+initialize	aTMcomponents.ml	/^let initialize (lst : account_spec list) : unit = $/;"	f
+initialize	aTMcomponents.mli	/^val initialize : account_spec list -> unit ;;$/;"	p	type:account_spec
+lab19	Makefile	/^lab19: ATM lab19.ml $/;"	t
+lab19	README.md	/^## lab19$/;"	s
+name	aTMcomponents.ml	/^type account_spec = {name : string; id : id; balance : int} ;;$/;"	r	type:account_spec
+name	aTMcomponents.mli	/^type account_spec = {name : string; id : id; balance : int} ;;$/;"	r	type:account_spec
+present_message	aTMcomponents.ml	/^let present_message (msg : string) : unit = $/;"	f
+present_message	aTMcomponents.mli	/^val present_message : string -> unit ;;$/;"	p	type:account_spec
+range	absbook.ml	/^let rec range (min : int) (max : int) : int list =$/;"	f
+reduce	absbook.ml	/^let reduce (f : 'a -> 'a -> 'a) (list : 'a list) : 'a = $/;"	f
+repeat	absbook.ml	/^let rec repeat (count : int) (f : 'a -> 'b) (x : 'a) : 'b =$/;"	f
+result	absbook.ml	/^  let result, time = call_timed ~count f x in$/;"	v
+t0	absbook.ml	/^  let t0 = Unix.gettimeofday() in $/;"	v
+unit_test	absbook.ml	/^let unit_test (condition : bool) (msg : string) : unit =$/;"	f
+unit_test_within	absbook.ml	/^let unit_test_within (tolerance : float)$/;"	f
+update_balance	aTMcomponents.ml	/^let update_balance (id : int) (amount : int) : unit = $/;"	f
+update_balance	aTMcomponents.mli	/^val update_balance : id -> int -> unit ;;$/;"	p	type:account_spec
+verify	absbook.ml	/^let verify (condition : bool)$/;"	f
